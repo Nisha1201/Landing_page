@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traveling Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#services">Services</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to Our Traveling Website</h1>
+                <p>Discover amazing destinations around the world!</p>
+                <a href="#destinations" class="cta-button">Explore Destinations</a>
+            </div>
+        </section>
+
+        <section class="destinations" id="destinations">
+            <h2>Featured Destinations</h2>
+            <div class="destination-card">
+                <img src="image/muntains.jpg" alt="Destination 1">
+                <h3>Destination 1</h3>
+                <p>A visit to an indian hill station</p>
+                <a href="#" class="cta-button">Learn More</a>
+            </div>
+            <div class="destination-card">
+                <img src="image/istockphoto-1327100790-1024x1024.jpg" alt="Destination 2">
+                <h3>Destination 2</h3>
+                <p> Thimphu, Bhutan. Thimphu is the capital of Bhutan. Bhutan is the only carbon-negative country in the
+                    world.</p>
+                <a href="#" class="cta-button">Learn More</a>
+            </div>
+        </section>
+
+
+
+        <section class="about" id="about">
+            <div class="about-content">
+                <h2>About Our Traveling Website</h2>
+                <p>Welcome to our traveling website! At Nisha Traveling Company, we are passionate about exploring the
+                    world's most incredible destinations and sharing our experiences with fellow travel enthusiasts.</p>
+                <p>Our mission is to inspire and guide you on your journeys, providing valuable information, travel
+                    tips, and curated travel packages that will make your trips unforgettable.</p>
+                <p>Whether you're a seasoned globetrotter or planning your first adventure, our platform offers a wide
+                    range of resources to help you make the most of your travels. From breathtaking natural wonders to
+                    vibrant cities, we cover it all!</p>
+                <p>Join us on this incredible journey, and let's explore the world together!</p>
+            </div>
+        </section>
+
+
+
+        <section class="contact" id="contact">
+            <div class="contact-content">
+                <h2>Contact Us</h2>
+                <p>We'd love to hear from you! If you have any questions or need assistance, please fill out the form
+                    below, and we'll get back to you as soon as possible.</p>
+
+                <form action="submit_form.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <input type="submit" value="Submit" class="cta-button">
+                </form>
+            </div>
+        </section>
+
+        <section class="services" id="services">
+            <div class="services-content">
+                <h2>Our Services</h2>
+                <p>With a wide range of services, we cater to all your travel needs:</p>
+                <ul>
+                    <li>Customized Travel Packages</li>
+                    <li>Group Tours</li>
+                    <li>Adventure Expeditions</li>
+                    <li>Luxury Getaways</li>
+                    <li>Family-Friendly Vacations</li>
+                    <li>Honeymoon Specials</li>
+                </ul>
+                <p>No matter your travel style or budget, we're committed to crafting a personalized itinerary that will
+                    exceed your expectations and create lasting memories.</p>
+                <a href="#contact" class="cta-button">Get in Touch</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Nisha Traveling Company.</p>
+    </footer>
+</body>
+
+</html>
