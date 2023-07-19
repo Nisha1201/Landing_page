@@ -62,43 +62,52 @@ body, h1, h2, h3, p, ul, li {
     font-size: 16px;
   }
   
-  /* Style the destinations section */
-  .destinations {
-    padding: 40px;
-    background-image: url(image/spots-different-bright-dry-colors.jpg);
-     
-  }
+
   
-  .destinations h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  .destination-card {
-    background-color: #f1f1f1;
-    padding: 20px;
-    margin-bottom: 20px;
-  }
-  
-  .destination-card img {
-    width: 100%;
-    height: 450px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    /* flex:content; */
-  }
-  
-  .destination-card h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
-  
-  .destination-card p {
-    font-size: 16px;
-    margin-bottom: 20px;
-  }
-  
-  /* Style the About section */
+.destinations {
+  margin: 2px;
+  padding: 2px;
+  text-align: center; 
+}
+
+.destination-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.destination-column {
+  display: flex;
+}
+
+.destination-card {
+  flex: 1;
+  max-width: 300px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+.destination-card img {
+  margin: 2px;
+  padding: 2px;
+  width: 300px;
+  height: 250px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  flex:content;
+}
+
+.destination-card h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.destination-card p {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
   .about {
     background-color: #a8c611;
     padding: 40px;
@@ -116,7 +125,6 @@ body, h1, h2, h3, p, ul, li {
   }
 
   
-
   .contact {
     background-color:aquamarine;
     padding: 40px;
@@ -168,9 +176,6 @@ body, h1, h2, h3, p, ul, li {
   .contact input[type="submit"]:hover {
     background-color: #e67e22;
   }
-  
-
-  /* Style the footer */
   footer {
     background-color: #333;
     color: #fff;
@@ -178,7 +183,6 @@ body, h1, h2, h3, p, ul, li {
     padding: 10px;
   }
 
-  /* Style the Services section */
 .services {
     background-color: #367eb5;
     padding: 40px;
@@ -205,4 +209,122 @@ body, h1, h2, h3, p, ul, li {
     font-size: 16px;
   }
   
+ 
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .hero-content h1 {
+      font-size: 28px;
+  }
+}
+/* Styles for tablet devices */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  /* Hero Section */
+  .hero-content h1 {
+      font-size: 28px;
+  }
   
+  /* Destination Cards */
+  .destination-card {
+      max-width: 48%;
+  }
+
+  /* About Section */
+  .about-content p {
+      font-size: 14px;
+  }
+
+  /* Contact Section */
+  .contact-content p {
+      font-size: 14px;
+  }
+  .contact form {
+      max-width: 80%;
+  }
+
+  /* Services Section */
+  .services-content p {
+      font-size: 14px;
+  }
+}
+
+/* Styles for medium and large laptops */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  /* Hero Section */
+  .hero-content h1 {
+      font-size: 32px;
+  }
+
+  /* Destination Cards */
+  .destination-card {
+      max-width: 30%;
+  }
+
+  /* About Section */
+  .about-content p {
+      font-size: 16px;
+  }
+
+  /* Contact Section */
+  .contact-content p {
+      font-size: 16px;
+  }
+  .contact form {
+      max-width: 70%;
+  }
+
+  /* Services Section */
+  .services-content p {
+      font-size: 16px;
+  }
+}
+
+/* Styles for large desktops */
+@media screen and (min-width: 1200px) {
+  /* Hero Section */
+  .hero-content h1 {
+      font-size: 36px;
+  }
+
+  /* Destination Cards */
+  .destination-card {
+      max-width: 23%;
+  }
+
+  /* About Section */
+  .about-content p {
+      font-size: 18px;
+  }
+
+  /* Contact Section */
+  .contact-content p {
+      font-size: 18px;
+  }
+  .contact form {
+      max-width: 60%;
+  }
+
+  /* Services Section */
+  .services-content p {
+      font-size: 18px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
